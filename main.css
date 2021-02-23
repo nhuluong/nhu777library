@@ -18,13 +18,24 @@ body {
     padding: 2em 2em 4em;
 }
 
+a:link   {
+    font-family: 'Space Mono', monospace;
+    font-size: 9 px;
+    color: red;
+    font-style: italic;
+}
+
+a:hover {
+    color: black;
+}
+
 background  {
     z-index: 0;
-    top: -500px;
-    position: -webkit-fixed;
-    position: fixed;
-    width: 100%;
-    height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .bottom-right   {
@@ -49,8 +60,43 @@ background  {
     width: 40%
 }
 
+.small-center-container   {
+    margin: auto;
+    width: 30%;
+}
+
+.centered   {
+    font-family: 'Space Mono', monospace;
+    font-style: italic;
+    font-weight: normal;
+    color: black;
+    font-size: 12px;
+    line-height: 1px;
+    text-align: center;
+}
+
+.centered-body  {
+    font-family: 'Space Mono', monospace;
+    font-style: italic;
+    font-weight: normal;
+    color: black;
+    font-size: 12px;
+    line-height: auto;
+    text-align: justify;
+}
+
+.link-paragraph-container   {
+    width: 302px;
+    margin: auto;
+}
+
 .spacing {
     margin-bottom: 50px;
+    width: 40%;
+}
+
+.spacing-small {
+    margin-bottom: 30px;
     width: 40%;
 }
 
@@ -94,10 +140,10 @@ mark    {
 }
 
 .quote-small    {
-    font-family: covik-sans, sans-serif;
-    font-style: normal;
+    font-family: 'Space Mono', monospace;
+    font-style: italic;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 13px;
     line-height: auto;
 }
 
@@ -200,11 +246,11 @@ img {
 
 .article-image3 {
     transition: transform 1s;
-    -webkit-transform: rotate(3.77deg);
-    -moz-transform: rotate(3.77deg);
-    -o-transform: rotate(3.77deg);
-    -ms-transform: rotate(3.77deg);
-    transform: rotate(3.77deg);
+    -webkit-transform: rotate(-3.77deg);
+    -moz-transform: rotate(-3.77deg);
+    -o-transform: rotate(-3.77deg);
+    -ms-transform: rotate(-3.77deg);
+    transform: rotate(-3.77deg);
     -moz-box-shadow: 0 0 10px #ccc;
     -webkit-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 20px 50px #8C92FF;
@@ -212,14 +258,14 @@ img {
 
 .article-image4  {
     transition: transform 1s;
-    -webkit-transform: rotate(-7.11deg);
-    -moz-transform: rotate(-7.11deg);
-    -o-transform: rotate(-7.11deg);
-    -ms-transform: rotate(-7.11deg);
-    transform: rotate(-7.11deg);
+    -webkit-transform: rotate(7.77deg);
+    -moz-transform: rotate(7.77deg);
+    -o-transform: rotate(7.77deg);
+    -ms-transform: rotate(7.77deg);
+    transform: rotate(7.77deg);
     -moz-box-shadow: 0 0 10px #ccc;
     -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 20px 50px #E2F9A1;
+    box-shadow: 0 20px 50px #FFD78C;
 }
 
 .article-image:hover   {
@@ -411,6 +457,7 @@ img {
 }
 
 .year-column {
+    font-family: 'Space Mono', monospace;
     background-color: transparent;
     float:left;
     margin-bottom: 100px;
